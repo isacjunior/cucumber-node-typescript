@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "test": "cucumber-js -f node_modules/cucumber-pretty -f json:src/report/cucumber_report.json --require-module ts-node/register src/features/**/*.feature --require 'src/step-definitions/**/*.ts'",
-    "report": "node src/report"
+    "report": "ts-node --files src/report"
   },
   "devDependencies": {
     "@types/cucumber": "^4.0.5",
