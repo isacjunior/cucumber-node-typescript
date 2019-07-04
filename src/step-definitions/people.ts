@@ -13,4 +13,3 @@ Given('User {string} and make request', async (id: string) => {
 Then('I should have {string}', (name: string) => {
   expect(people.name).toBe(name)
 })
-

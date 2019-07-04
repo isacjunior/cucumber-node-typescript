@@ -8,8 +8,8 @@ const options = {
   reportSuiteAsScenarios: true,
   launchReport: true,
   metadata: {
-    'App Version': '1.0.0'
-  }
+    'App Version': '1.0.0',
+  },
 }
 
 reporter.generate(options, () => process.exit())

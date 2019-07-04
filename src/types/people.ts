@@ -1,3 +1,3 @@
 export interface People {
-  name?: string
+  name?: string,
 }

@@ -2,7 +2,7 @@ declare module 'cucumber-html-reporter' {
   interface Options {
     theme: string,
     jsonFile: string,
-    jsonDir?: string, 
+    jsonDir?: string,
     output: string,
     screenshotsDirectory?: string,
     reportSuiteAsScenarios: boolean,
@@ -13,9 +13,9 @@ declare module 'cucumber-html-reporter' {
     noInlineScreenshots?: boolean,
     name?: string,
     metadata?: {
-      [key: string]: string
+      [key: string]: string,
     },
   }
 
-  export function generate(options: any, callback: () => NodeJS.Process): void
+  export function generate(options: Options, callback: () => NodeJS.Process): void
 }
